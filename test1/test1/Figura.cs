@@ -29,7 +29,16 @@ namespace test1
         protected bool CzySkos(Pozycja nowaPozycja)
         {
             return Math.Abs(Pozycja.Y - nowaPozycja.Y) == Math.Abs(Pozycja.X - nowaPozycja.X);
+        }
+        public virtual bool CzyMoznaPrzesunac (Pozycja nowaPozycja)
+        {
+            return CzyPionowo(nowaPozycja) || CzyPoziomo(nowaPozycja) || CzySkos(nowaPozycja);
+        }
 
+        public Figura(Pozycja pozycja, string kolor)
+        {
+            this.pozycja = pozycja;
+            this.kolor = kolor;
         }
     }
 }
