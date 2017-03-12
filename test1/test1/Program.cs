@@ -10,7 +10,10 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            //test
+            Pozycja p = new Pozycja("C4");
+            Pozycja p2 = new Pozycja("A5");
+            Figura f = new Pionek(p.Figura.KOLOR_BIAŁY);
+            Console.WriteLine(f.CzyMoznaPrzesunac(p2));
         }
     }
 }
