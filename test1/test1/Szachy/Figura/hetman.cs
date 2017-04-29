@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Aplikacja1.Figury
 {
-    class Pionek : Figura
+    class Hetman : Figura
     {
-        public Pionek(Pozycja pozycja, string kolor) : base (pozycja,kolor)
+        public Hetman(Pozycja pozycja, string kolor) : base (pozycja,kolor)
         {
 
         }
         public virtual bool CzyMoznaPrzesunac(Pozycja nowaPozycja)
         {
-            return CzyPionowo(nowaPozycja) || CzyPoziomo(nowaPozycja);
+            return CzyPionowo(nowaPozycja) || CzyPoziomo(nowaPozycja) || CzySkos(nowaPozycja);
         }
     }
+
 }

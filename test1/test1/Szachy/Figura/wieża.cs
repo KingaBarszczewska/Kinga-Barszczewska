@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Aplikacja1.Figury
 {
-    class Pionek : Figura
+    class Wieza : Figura
     {
-        public Pionek(Pozycja pozycja, string kolor) : base (pozycja,kolor)
+        public Wieza(Pozycja pozycja, string kolor) : base (pozycja,kolor)
         {
 
         }
